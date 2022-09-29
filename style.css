@@ -1,0 +1,195 @@
+:root {
+  --fuenteTexto: 'Open Sans', sans-serif;
+  --primario: #0A3871;
+  --blanco: #ffffff;
+  --negro: #000000;
+  --naranjo: #AB5200;
+}
+
+body {
+  background-image: url(imgs/portada1.jpg); 
+background-repeat: no-repeat;
+
+}
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 16px;
+}
+
+#hombre {
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+}
+
+.hombre-ahorcado {
+  width: 100vw;
+  text-align: center;
+  margin-top:  10rem;
+  margin-bottom: 4rem;
+  height: 16.75rem;
+}
+
+.adivinado {
+  text-align: center;
+  color: var(--blanco);
+  font-size: 1.8rem;
+}
+
+.letra {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.adivinada {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-bottom: solid 1px var(--blanco);
+  margin-left: 0.4rem;
+  line-height: 4.5rem;
+}
+
+.errado {
+  text-align:  center;
+  margin-top: 1rem;
+  color: var(--negro)
+}
+
+.errada {
+  margin-left: 1rem;
+}
+
+.btn-azul {
+  width: 15rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  color: #AB5200;
+  background-color: var(--blanco);
+  cursor: pointer;
+  box-shadow: 3px 5px var(--naranjo);
+}
+
+.btn-agregar{
+  width: 15rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  color: #AB5200;
+  background-color: var(--blanco);
+  cursor: pointer;
+  box-shadow: 3px 5px var(--naranjo);
+}
+
+.botones {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.input-palabra{
+  margin-top: 3rem;
+  opacity: 0.8;
+  margin-left: 25%;
+  width: 200px;
+  height: 300px;
+  
+}
+
+@media (min-width: 768px) {
+  .input-palabra{
+    margin-left: 35%;
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.btn-enviar{
+  margin-left: 30%;
+  margin-top: 10px;
+  width: 10rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  color: #AB5200;
+  background-color: var(--blanco);
+  cursor: pointer;
+  box-shadow: 3px 5px var(--naranjo);
+}
+
+@media (min-width: 768px) {
+  .btn-enviar{
+    margin-left: 45%;
+    
+  }
+}
+
+
+.secciondos{
+  display:block;
+
+}
+
+::placeholder{
+  color: var(--naranjo);
+}
+
+.portada{
+
+    background-image: url(imgs/Imagen2.png);
+    background-size: 100% 100%;
+    width: 40%;
+    height: 100px;
+    margin-left: 30%;
+    animation: movimiento 2.5s linear infinite;
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+.portadahome{
+  background-image: url(imgs/Imagen2.png);
+  background-size: 100% 100%;
+  width: 40%;
+  height: 100px;
+  margin-left: 30%;
+  animation: movimiento 2.5s linear infinite;
+}
+
+@keyframes movimiento{
+  0%{
+      transform: translateY(0);
+  }
+  50%{
+      transform: translateY(30px);
+  }
+  100%{
+      transform: translate(0);
+  }
+}
+
+.logo {
+  position: absolute;
+  left: 50px;
+  right: 37.43%;
+  top: 50px;
+  bottom: 0%;
+  width: 50px;
+  height: 50px;
+  
+}
